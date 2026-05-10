@@ -21,7 +21,7 @@ afterEach(() => {
 
 describe('Plant Shop App', () => {
   it('renders all plants on page load', async () => {
-    global.fetch.mockResolvedValueOnce({
+    globalThis.fetch.mockResolvedValueOnce({
       ok: true,
       json: async () => plantsData,
     })
@@ -42,7 +42,7 @@ describe('Plant Shop App', () => {
       price: 32.5,
     }
 
-    global.fetch
+    globalThis.fetch
       .mockResolvedValueOnce({
         ok: true,
         json: async () => plantsData,
@@ -70,14 +70,14 @@ describe('Plant Shop App', () => {
     expect(form).toBeTruthy()
     fireEvent.submit(form)
 
-    expect(global.fetch.mock.calls.length).toBe(2)
-    expect(global.fetch.mock.calls[1][1]?.method).toBe('POST')
+    expect(globalThis.fetch.mock.calls.length).toBe(2)
+    expect(globalThis.fetch.mock.calls[1][1]?.method).toBe('POST')
 
     expect(await screen.findByText('Fiddle Leaf Fig')).toBeTruthy()
   })
 
   it('allows a user to mark a plant as out of stock', async () => {
-    global.fetch.mockResolvedValueOnce({
+    globalThis.fetch.mockResolvedValueOnce({
       ok: true,
       json: async () => plantsData,
     })
@@ -97,7 +97,7 @@ describe('Plant Shop App', () => {
   })
 
   it('filters plants shown on the page by search input', async () => {
-    global.fetch.mockResolvedValueOnce({
+    globalThis.fetch.mockResolvedValueOnce({
       ok: true,
       json: async () => plantsData,
     })

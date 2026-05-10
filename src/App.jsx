@@ -11,7 +11,6 @@ function App() {
   const [error, setError] = useState(null)
 
   useEffect(() => {
-    setLoading(true)
     fetch(PLANTS_URL)
       .then((response) => {
         if (!response.ok) {
@@ -21,11 +20,10 @@ function App() {
       })
       .then((data) => {
         setPlants(data.map((plant) => ({ ...plant, isOutOfStock: false })))
+        setLoading(false)
       })
       .catch(() => {
         setError('Unable to load plants. Please try again.')
-      })
-      .finally(() => {
         setLoading(false)
       })
   }, [])
