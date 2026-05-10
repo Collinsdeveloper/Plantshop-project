@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites name="vitest tests" tests="4" failures="0" errors="0" time="0.228340026">
-    <testsuite name="src/App.test.jsx" timestamp="2026-05-10T14:56:24.659Z" hostname="collins-kipngetich-HP-EliteBook-840-G3" tests="4" failures="0" errors="0" skipped="0" time="0.228340026">
-        <testcase classname="src/App.test.jsx" name="Plant Shop App &gt; renders all plants on page load" time="0.074376195">
+<testsuites name="vitest tests" tests="4" failures="0" errors="0" time="0.326282084">
+    <testsuite name="src/App.test.jsx" timestamp="2026-05-10T15:02:46.510Z" hostname="collins-kipngetich-HP-EliteBook-840-G3" tests="4" failures="0" errors="0" skipped="0" time="0.326282084">
+        <testcase classname="src/App.test.jsx" name="Plant Shop App &gt; renders all plants on page load" time="0.10075188">
         </testcase>
-        <testcase classname="src/App.test.jsx" name="Plant Shop App &gt; adds a new plant to the backend and page by form submission" time="0.050526464">
+        <testcase classname="src/App.test.jsx" name="Plant Shop App &gt; adds a new plant to the backend and page by form submission" time="0.062567796">
         </testcase>
-        <testcase classname="src/App.test.jsx" name="Plant Shop App &gt; allows a user to mark a plant as out of stock" time="0.056362522">
+        <testcase classname="src/App.test.jsx" name="Plant Shop App &gt; allows a user to mark a plant as out of stock" time="0.131102566">
         </testcase>
-        <testcase classname="src/App.test.jsx" name="Plant Shop App &gt; filters plants shown on the page by search input" time="0.044092079">
+        <testcase classname="src/App.test.jsx" name="Plant Shop App &gt; filters plants shown on the page by search input" time="0.029284049">
         </testcase>
     </testsuite>
 </testsuites>
