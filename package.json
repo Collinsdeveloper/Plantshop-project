@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "test": "vitest run --environment happy-dom",
+    "test": "vitest run",
     "lint": "eslint .",
     "preview": "vite preview"
   },
